@@ -11,7 +11,8 @@ function App() {
   const [task, setTask] = useState({});
 
   useEffect(() => {
-    localStorage.setItem("taskList", JSON.stringify(taskList))
+    localStorage.setItem("taskList", JSON.stringify(taskList));
+    document.title = "TaskBuddy"
   },[taskList]);
 
   return (
